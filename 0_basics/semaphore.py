@@ -27,6 +27,7 @@ def worker(*args):
     args[0].release()
     return
 
+
 # Two will execute, last one will as one finishes
 sem = threading.Semaphore(2)
 thread_1 = threading.Thread(target=worker, args=[sem])
