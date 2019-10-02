@@ -1,11 +1,11 @@
 import threading
 
 
-
 # We've got a global variable
 count = 0
 # Here's a lock for it
 a = threading.Lock()
+
 
 def worker(*args):
     """thread worker function, with some funky ordered logic"""
